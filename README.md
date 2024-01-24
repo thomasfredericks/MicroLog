@@ -13,14 +13,14 @@ Add to your global space:
 #include <MicroLog.h>
 ```
 
-By default, MicroLog will use `Serial`. You can change the `Stream` with :
+By default, MicroLog will use `Serial`. You can change the `Stream` (to Serial1 for example) with :
 ```cpp
-#include <MicroLog.h>
+#define MICRO_LOG_STREAM Serial1
 ```
 
-In `setup()` initialize the Stream (to Serial1 for example) with :
+In `setup()` begin the Stream (to a baud of 115200) with :
 ```cpp
-#define MICRO_LOG_STREAM Serial
+LOG_BEGIN(115200)
 ```
 
 You can then log to the stream with `LOG()` like this :
