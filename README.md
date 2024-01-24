@@ -50,3 +50,4 @@ To deactive the logging, add before `#include <MicroLog.h>` :
 #define LOG_DEACTIVATE
 #include <MicroLog.h>
 ```
+

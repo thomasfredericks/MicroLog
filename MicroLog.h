@@ -21,6 +21,8 @@
 
     #if (!defined(LOG_DEACTIVATE))
 
+        #define LOG_ACTIVATED
+
         #ifndef LOG_STREAM
             #define MICRO_LOG_STREAM         Serial
         #endif
