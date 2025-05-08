@@ -33,51 +33,51 @@
 
         #define LOG_BEGIN(speed)     MICRO_LOG_STREAM.begin(speed)
 
-        #define __LOG_0(A)                  MICRO_LOG_STREAM.println(A)
+        #define __LOG_0(A)                  {MICRO_LOG_STREAM.println(A);}
 
-        #define __LOG_1(A,B)                MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
-                                              MICRO_LOG_STREAM.println(B)
+        #define __LOG_1(A,B)                {MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
+                                              MICRO_LOG_STREAM.println(B);}
 
-        #define __LOG_2(A,B,C)              MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
+        #define __LOG_2(A,B,C)              {MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(B);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
-                                              MICRO_LOG_STREAM.println(C)
+                                              MICRO_LOG_STREAM.println(C);}
 
-        #define __LOG_3(A,B,C,D)            MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
+        #define __LOG_3(A,B,C,D)            {MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(B);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(C);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
-                                              MICRO_LOG_STREAM.println(D)
+                                              MICRO_LOG_STREAM.println(D);}
 
-        #define __LOG_4(A,B,C,D,E)          MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
+        #define __LOG_4(A,B,C,D,E)          {MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(B);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(C);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(D);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
-                                              MICRO_LOG_STREAM.println(E)
+                                              MICRO_LOG_STREAM.println(E);}
 
-        #define __LOG_5(A,B,C,D,E,F)        MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
+        #define __LOG_5(A,B,C,D,E,F)        {MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(B);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(C);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(D);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(E);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
-                                              MICRO_LOG_STREAM.println(F)
+                                              MICRO_LOG_STREAM.println(F);}
 
-        #define __LOG_6(A,B,C,D,E,F,G)      MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
+        #define __LOG_6(A,B,C,D,E,F,G)      {MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(B);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(C);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(D);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(E);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(F);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
-                                              MICRO_LOG_STREAM.println(G)
+                                              MICRO_LOG_STREAM.println(G);}
 
-        #define __LOG_7(A,B,C,D,E,F,G,H)    MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
+        #define __LOG_7(A,B,C,D,E,F,G,H)    {MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(B);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(C);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(D);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(E);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(F);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(G);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
-                                              MICRO_LOG_STREAM.println(H)
+                                              MICRO_LOG_STREAM.println(H);}
 
-        #define __LOG_8(A,B,C,D,E,F,G,H,I)  MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
+        #define __LOG_8(A,B,C,D,E,F,G,H,I)  {MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(B);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(C);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(D);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
@@ -85,9 +85,9 @@
                                               MICRO_LOG_STREAM.print(F);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(G);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(H);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
-                                              MICRO_LOG_STREAM.println(I)
+                                              MICRO_LOG_STREAM.println(I);}
 
-        #define __LOG_9(A,B,C,D,E,F,G,H,I,J)  MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
+        #define __LOG_9(A,B,C,D,E,F,G,H,I,J)  {MICRO_LOG_STREAM.print(A);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(B);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(C);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(D);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
@@ -96,7 +96,7 @@
                                               MICRO_LOG_STREAM.print(G);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(H);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
                                               MICRO_LOG_STREAM.print(I);MICRO_LOG_STREAM.print(LOG_SEPARATOR);\
-                                              MICRO_LOG_STREAM.println(J)
+                                              MICRO_LOG_STREAM.println(J);}
 
         #define __LOG_X(x,A,B,C,D,E,F,G,H,I,J,MACRO, ...) MACRO
 
