@@ -6,22 +6,27 @@ A basic Arduino library to help with logging through a `Stream` like `Serial`. T
 2. You can print up to 9 values with the same function instead of calling multiple `print()`.
 
 
-# Use
+## Setup
 
-Add to your global space:
+Add to your global space the following two lines, changing `Serial` to your own Stream output if requiered :
 ```cpp
+#define LOG_OUTPUT Serial
 #include <MicroLog.h>
 ```
 
-By default, MicroLog will use `Serial`. You can change the `Stream` (to Serial1 for example) with :
+To deactivate, comment out `LOG_OUTPUT` :
 ```cpp
-#define MICRO_LOG_STREAM Serial1
+//#define LOG_OUTPUT Serial
+#include <MicroLog.h>
 ```
 
-In `setup()` begin the Stream (to a baud of 115200) with :
+
+Do not forget to begin the Stream `setup()` if requiered :
 ```cpp
-LOG_BEGIN(115200)
+Serial.begin(115200)
 ```
+
+## Use
 
 You can then log to the stream with `LOG()` like this :
 ```cpp
@@ -35,7 +40,13 @@ You can have up to 9 arguments with `LOG()`  :
 LOG("State of pin", 3 , "is" , digitalRead(3), "and", "state of pin", 2 , "is" , digitalRead(2));
 ```
 
-# Changing the separator
+You can print out an array with `LOG_ARRAY()`  :
+```cpp
+int numbers[] = {10, 20, 30};
+LOG_ARRAY(numbers, 3); // Will output: numbers: [ 10, 20, 30 ]
+```
+
+## Changing the separator
 
 By default, the separator is a space " ", but this can be changed to anything by adding before `#include <MicroLog.h>` :
 ```cpp
@@ -43,11 +54,5 @@ By default, the separator is a space " ", but this can be changed to anything by
 #include <MicroLog.h>
 ```
 
-# Deactivate the logging
 
-To deactive the logging, add before `#include <MicroLog.h>` :
-```cpp
-#define LOG_DEACTIVATE
-#include <MicroLog.h>
-```
 
