@@ -16,186 +16,186 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef __MICRO_LOG__
-#define __MICRO_LOG__
+#ifndef __MICRO_MICRO_LOG__
+#define __MICRO_MICRO_LOG__
 
-#ifdef LOG_OUTPUT
+#ifdef MICRO_LOG_OUTPUT
 
-#ifndef LOG_SEPARATOR
-#define LOG_SEPARATOR " "
+#ifndef MICRO_LOG_SEPARATOR
+#define MICRO_LOG_SEPARATOR " "
 #endif
 
-#define LOG_BEGIN(speed) LOG_OUTPUT.begin(speed)
+#define MICRO_LOG_BEGIN(speed) MICRO_LOG_OUTPUT.begin(speed)
 
-#define __LOG_0(A)             \
+#define __MICRO_LOG_0(A)             \
     {                          \
-        LOG_OUTPUT.println(A); \
+        MICRO_LOG_OUTPUT.println(A); \
     }
 
-#define __LOG_1(A, B)                    \
+#define __MICRO_LOG_1(A, B)                    \
     {                                    \
-        LOG_OUTPUT.print(A);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.println(B);           \
+        MICRO_LOG_OUTPUT.print(A);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.println(B);           \
     }
 
-#define __LOG_2(A, B, C)                 \
+#define __MICRO_LOG_2(A, B, C)                 \
     {                                    \
-        LOG_OUTPUT.print(A);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(B);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.println(C);           \
+        MICRO_LOG_OUTPUT.print(A);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(B);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.println(C);           \
     }
 
-#define __LOG_3(A, B, C, D)              \
+#define __MICRO_LOG_3(A, B, C, D)              \
     {                                    \
-        LOG_OUTPUT.print(A);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(B);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(C);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.println(D);           \
+        MICRO_LOG_OUTPUT.print(A);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(B);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(C);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.println(D);           \
     }
 
-#define __LOG_4(A, B, C, D, E)           \
+#define __MICRO_LOG_4(A, B, C, D, E)           \
     {                                    \
-        LOG_OUTPUT.print(A);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(B);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(C);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(D);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.println(E);           \
+        MICRO_LOG_OUTPUT.print(A);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(B);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(C);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(D);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.println(E);           \
     }
 
-#define __LOG_5(A, B, C, D, E, F)        \
+#define __MICRO_LOG_5(A, B, C, D, E, F)        \
     {                                    \
-        LOG_OUTPUT.print(A);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(B);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(C);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(D);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(E);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.println(F);           \
+        MICRO_LOG_OUTPUT.print(A);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(B);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(C);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(D);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(E);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.println(F);           \
     }
 
-#define __LOG_6(A, B, C, D, E, F, G)     \
+#define __MICRO_LOG_6(A, B, C, D, E, F, G)     \
     {                                    \
-        LOG_OUTPUT.print(A);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(B);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(C);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(D);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(E);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(F);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.println(G);           \
+        MICRO_LOG_OUTPUT.print(A);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(B);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(C);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(D);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(E);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(F);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.println(G);           \
     }
 
-#define __LOG_7(A, B, C, D, E, F, G, H)  \
+#define __MICRO_LOG_7(A, B, C, D, E, F, G, H)  \
     {                                    \
-        LOG_OUTPUT.print(A);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(B);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(C);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(D);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(E);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(F);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.print(G);             \
-        LOG_OUTPUT.print(LOG_SEPARATOR); \
-        LOG_OUTPUT.println(H);           \
+        MICRO_LOG_OUTPUT.print(A);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(B);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(C);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(D);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(E);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(F);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.print(G);             \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR); \
+        MICRO_LOG_OUTPUT.println(H);           \
     }
 
-#define __LOG_8(A, B, C, D, E, F, G, H, I) \
+#define __MICRO_LOG_8(A, B, C, D, E, F, G, H, I) \
     {                                      \
-        LOG_OUTPUT.print(A);               \
-        LOG_OUTPUT.print(LOG_SEPARATOR);   \
-        LOG_OUTPUT.print(B);               \
-        LOG_OUTPUT.print(LOG_SEPARATOR);   \
-        LOG_OUTPUT.print(C);               \
-        LOG_OUTPUT.print(LOG_SEPARATOR);   \
-        LOG_OUTPUT.print(D);               \
-        LOG_OUTPUT.print(LOG_SEPARATOR);   \
-        LOG_OUTPUT.print(E);               \
-        LOG_OUTPUT.print(LOG_SEPARATOR);   \
-        LOG_OUTPUT.print(F);               \
-        LOG_OUTPUT.print(LOG_SEPARATOR);   \
-        LOG_OUTPUT.print(G);               \
-        LOG_OUTPUT.print(LOG_SEPARATOR);   \
-        LOG_OUTPUT.print(H);               \
-        LOG_OUTPUT.print(LOG_SEPARATOR);   \
-        LOG_OUTPUT.println(I);             \
+        MICRO_LOG_OUTPUT.print(A);               \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);   \
+        MICRO_LOG_OUTPUT.print(B);               \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);   \
+        MICRO_LOG_OUTPUT.print(C);               \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);   \
+        MICRO_LOG_OUTPUT.print(D);               \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);   \
+        MICRO_LOG_OUTPUT.print(E);               \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);   \
+        MICRO_LOG_OUTPUT.print(F);               \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);   \
+        MICRO_LOG_OUTPUT.print(G);               \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);   \
+        MICRO_LOG_OUTPUT.print(H);               \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);   \
+        MICRO_LOG_OUTPUT.println(I);             \
     }
 
-#define __LOG_9(A, B, C, D, E, F, G, H, I, J) \
+#define __MICRO_LOG_9(A, B, C, D, E, F, G, H, I, J) \
     {                                         \
-        LOG_OUTPUT.print(A);                  \
-        LOG_OUTPUT.print(LOG_SEPARATOR);      \
-        LOG_OUTPUT.print(B);                  \
-        LOG_OUTPUT.print(LOG_SEPARATOR);      \
-        LOG_OUTPUT.print(C);                  \
-        LOG_OUTPUT.print(LOG_SEPARATOR);      \
-        LOG_OUTPUT.print(D);                  \
-        LOG_OUTPUT.print(LOG_SEPARATOR);      \
-        LOG_OUTPUT.print(E);                  \
-        LOG_OUTPUT.print(LOG_SEPARATOR);      \
-        LOG_OUTPUT.print(F);                  \
-        LOG_OUTPUT.print(LOG_SEPARATOR);      \
-        LOG_OUTPUT.print(G);                  \
-        LOG_OUTPUT.print(LOG_SEPARATOR);      \
-        LOG_OUTPUT.print(H);                  \
-        LOG_OUTPUT.print(LOG_SEPARATOR);      \
-        LOG_OUTPUT.print(I);                  \
-        LOG_OUTPUT.print(LOG_SEPARATOR);      \
-        LOG_OUTPUT.println(J);                \
+        MICRO_LOG_OUTPUT.print(A);                  \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);      \
+        MICRO_LOG_OUTPUT.print(B);                  \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);      \
+        MICRO_LOG_OUTPUT.print(C);                  \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);      \
+        MICRO_LOG_OUTPUT.print(D);                  \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);      \
+        MICRO_LOG_OUTPUT.print(E);                  \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);      \
+        MICRO_LOG_OUTPUT.print(F);                  \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);      \
+        MICRO_LOG_OUTPUT.print(G);                  \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);      \
+        MICRO_LOG_OUTPUT.print(H);                  \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);      \
+        MICRO_LOG_OUTPUT.print(I);                  \
+        MICRO_LOG_OUTPUT.print(MICRO_LOG_SEPARATOR);      \
+        MICRO_LOG_OUTPUT.println(J);                \
     }
 
-#define __LOG_X(x, A, B, C, D, E, F, G, H, I, J, MACRO, ...) MACRO
+#define __MICRO_LOG_X(x, A, B, C, D, E, F, G, H, I, J, MACRO, ...) MACRO
 
-#define LOG(...) __LOG_X(, ##__VA_ARGS__,      \
-                         __LOG_9(__VA_ARGS__), \
-                         __LOG_8(__VA_ARGS__), \
-                         __LOG_7(__VA_ARGS__), \
-                         __LOG_6(__VA_ARGS__), \
-                         __LOG_5(__VA_ARGS__), \
-                         __LOG_4(__VA_ARGS__), \
-                         __LOG_3(__VA_ARGS__), \
-                         __LOG_2(__VA_ARGS__), \
-                         __LOG_1(__VA_ARGS__), \
-                         __LOG_0(__VA_ARGS__))
+#define LOG(...) __MICRO_LOG_X(, ##__VA_ARGS__,      \
+                         __MICRO_LOG_9(__VA_ARGS__), \
+                         __MICRO_LOG_8(__VA_ARGS__), \
+                         __MICRO_LOG_7(__VA_ARGS__), \
+                         __MICRO_LOG_6(__VA_ARGS__), \
+                         __MICRO_LOG_5(__VA_ARGS__), \
+                         __MICRO_LOG_4(__VA_ARGS__), \
+                         __MICRO_LOG_3(__VA_ARGS__), \
+                         __MICRO_LOG_2(__VA_ARGS__), \
+                         __MICRO_LOG_1(__VA_ARGS__), \
+                         __MICRO_LOG_0(__VA_ARGS__))
 
-#define LOG_ARRAY(array, length)                  \
+#define MICRO_LOG_ARRAY(array, length)                  \
     do {                                                \
-        LOG_OUTPUT.print(F(#array));                     \
-        LOG_OUTPUT.print(F(": [ "));                    \
+        MICRO_LOG_OUTPUT.print(F(#array));                     \
+        MICRO_LOG_OUTPUT.print(F(": [ "));                    \
         for (size_t i = 0; i < (length); ++i) {         \
-            LOG_OUTPUT.print((array)[i]);               \
+            MICRO_LOG_OUTPUT.print((array)[i]);               \
             if (i < (length) - 1)                       \
-                LOG_OUTPUT.print(F(", "));              \
+                MICRO_LOG_OUTPUT.print(F(", "));              \
         }                                               \
-        LOG_OUTPUT.println(F(" ]"));                    \
+        MICRO_LOG_OUTPUT.println(F(" ]"));                    \
     } while (0)
 
 #else
-#define LOG(...)
-#define LOG_BEGIN(speed)
-#define LOG_ARRAY(...)
+#define MICRO_LOG(...)
+#define MICRO_LOG_BEGIN(speed)
+#define MICRO_LOG_ARRAY(...)
 #endif // MICRO_LOG
-#endif //__MICRO_LOG__
+#endif //__MICRO_MICRO_LOG__
