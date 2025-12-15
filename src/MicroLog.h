@@ -169,7 +169,7 @@
 
 #define __MICRO_LOG_X(x, A, B, C, D, E, F, G, H, I, J, MACRO, ...) MACRO
 
-#define LOG(...) __MICRO_LOG_X(, ##__VA_ARGS__,      \
+#define MICRO_LOG(...) __MICRO_LOG_X(, ##__VA_ARGS__,      \
                          __MICRO_LOG_9(__VA_ARGS__), \
                          __MICRO_LOG_8(__VA_ARGS__), \
                          __MICRO_LOG_7(__VA_ARGS__), \
