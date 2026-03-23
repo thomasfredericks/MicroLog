@@ -46,7 +46,7 @@ Add to your global space the following two lines, changing `Serial` to your own 
 #include <MicroLog.h>
 ```
 
-To deactivate the logging simply comment out the `#define MICRO_LOG_OUTPUT` that precedes `#include <MicroLog.h>`, and all `MICRO_LOG` code will be disabled:
+To deactivate the logging simply **comment out** the `#define MICRO_LOG_OUTPUT` that precedes `#include <MicroLog.h>`, and all `MICRO_LOG` code will be disabled:
 ```cpp
 //#define MICRO_LOG_OUTPUT Serial
 #include <MicroLog.h>
@@ -68,7 +68,7 @@ MICRO_LOG("Millis :", millis());
 
 You can have up to 9 arguments with `MICRO_LOG()`:
 ```cpp
-// THIS WILL LOG SOMETHING LIKE : "State of pin 3 is 0 and state of pon 2 is 1"
+// THIS WILL LOG SOMETHING LIKE : "State of pin 3 is 0 and state of pin 2 is 1"
 MICRO_LOG("State of pin", 3 , "is" , digitalRead(3), "and", "state of pin", 2 , "is" , digitalRead(2));
 ```
 
